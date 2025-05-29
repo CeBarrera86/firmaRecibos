@@ -1,0 +1,59 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F959EA04-F528-4AB5-A51E-41361DAAF2D7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>QPLLiteDemoC10</AssemblyName>
+    <OutputName>perFLE</OutputName>
+    <DefineConstants>_QPLLiteLinkMode_=&gt;0%3b_QPLLiteDllMode_=&gt;1%3b_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1</DefineConstants>
+    <Model>Dll</Model>
+    <ApplicationIcon>Firma.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+  </PropertyGroup>
+  <ItemGroup>
+    <Library Include="CLAQPLLT.LIB" />
+    <Compile Include="QPLLiteDemoC10.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10003.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10006.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10009.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLITEDEMOC10_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="QPLLiteDemoC10_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <FileDriver Include="MSSQL" />
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>

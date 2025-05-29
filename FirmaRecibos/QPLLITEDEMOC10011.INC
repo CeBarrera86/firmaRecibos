@@ -1,0 +1,4 @@
+  MODULE('QPLLITEDEMOC10011.CLW')
+TextAndFont            PROCEDURE
+MergePDFs              PROCEDURE
+  END

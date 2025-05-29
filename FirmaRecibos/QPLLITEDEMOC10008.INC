@@ -1,0 +1,3 @@
+  MODULE('QPLLITEDEMOC10008.CLW')
+DrawText               PROCEDURE
+  END

@@ -1,0 +1,3 @@
+  MODULE('QPLLITEDEMOC10010.CLW')
+SetDocumentProperties  PROCEDURE
+  END

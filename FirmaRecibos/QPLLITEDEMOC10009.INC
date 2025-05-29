@@ -1,0 +1,3 @@
+  MODULE('QPLLITEDEMOC10009.CLW')
+FirmaRecibos           PROCEDURE
+  END

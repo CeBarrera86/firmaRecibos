@@ -1,0 +1,3 @@
+  MODULE('QPLLITEDEMOC10007.CLW')
+AddLinkToWeb           PROCEDURE
+  END
